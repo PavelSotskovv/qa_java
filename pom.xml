@@ -28,6 +28,33 @@
             <version>5.9.0</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>de.monochromata.contract</groupId>
+            <artifactId>java-contract</artifactId>
+            <version>18.4.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.sebhoss.contract</groupId>
+            <artifactId>contract-el</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.sebhoss.contract</groupId>
+            <artifactId>contract-spel</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>5.9.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
