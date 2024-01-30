@@ -30,10 +30,4 @@ public class LionConstructorTest {
         Lion lion = new Lion(sex);
         assertEquals(expectedHasMane, lion.doesHaveMane());
     }
-
-    @Test(expected = Exception.class)
-    public void testConstructorWithInvalidSex() throws Exception {
-        new Lion("UnknownSex");
-    }
-
 }

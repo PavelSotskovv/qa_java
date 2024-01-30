@@ -28,4 +28,9 @@ public class LionFuncTest {
         Lion lion = new Lion(mockedFeline);
         assertEquals(Arrays.asList("Животные", "Птицы", "Рыба"), lion.getFood());
     }
+
+    @Test(expected = Exception.class)
+    public void testConstructorWithInvalidSex() throws Exception {
+        new Lion("UnknownSex");
+    }
 }
