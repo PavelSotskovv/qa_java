@@ -18,14 +18,14 @@ public class LionFuncTest {
     @Test
     public void getKittens() throws Exception {
         when(mockedFeline.getKittens()).thenReturn(2);
-        Lion lion = new Lion(mockedFeline);
+        Lion lion = new Lion(mockedFeline, "Самец");
         assertEquals(2, lion.getKittens());
     }
 
     @Test
     public void getFood() throws Exception {
         when(mockedFeline.eatMeat()).thenReturn(Arrays.asList("Животные", "Птицы", "Рыба"));
-        Lion lion = new Lion(mockedFeline);
+        Lion lion = new Lion(mockedFeline,"Самка");
         assertEquals(Arrays.asList("Животные", "Птицы", "Рыба"), lion.getFood());
     }
 
