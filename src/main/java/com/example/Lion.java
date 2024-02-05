@@ -4,28 +4,22 @@ import java.util.List;
 
 public class Lion {
 
-    private String sex;
+    Predator predator;
     boolean hasMane;
-    Feline feline;
 
- //   public Lion(Feline feline, String sex){
- //       this.feline = feline;
- //       this.sex = sex;
- //   }
-    public Lion(Feline feline, String sex) throws Exception {
-        this.feline = feline;
-        this.sex = sex;
+    public Lion(String sex, Predator predator) throws Exception {
+        this.predator = predator;
         if ("Самец".equals(sex)) {
             hasMane = true;
         } else if ("Самка".equals(sex)) {
             hasMane = false;
         } else {
-            throw new Exception("Используйте допустимые значения пола животного - самей или самка");
+            throw new Exception("Используйте допустимые значения пола животного - самец или самка");
         }
     }
 
     public int getKittens() {
-        return feline.getKittens();
+        return predator.getKittens();
     }
 
     public boolean doesHaveMane() {
@@ -33,6 +27,6 @@ public class Lion {
     }
 
     public List<String> getFood() throws Exception {
-        return feline.eatMeat();
+        return predator.eatMeat();
     }
 }

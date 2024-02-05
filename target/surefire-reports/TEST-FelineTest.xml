@@ -63,7 +63,7 @@
     <property name="java.vendor.version" value="Corretto-21.0.1.12.1"/>
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
-  <testcase classname="FelineTest" name="getFamilyTest" time="0.001"/>
-  <testcase classname="FelineTest" name="getKittensTest" time="0"/>
+  <testcase classname="FelineTest" name="getFamilyTest" time="0"/>
+  <testcase classname="FelineTest" name="getKittensTest" time="0.001"/>
   <testcase classname="FelineTest" name="testEatMeat" time="0"/>
 </testsuite>

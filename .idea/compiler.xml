@@ -10,7 +10,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="qa-java" target="11" />
       <module name="untitled" target="11" />
     </bytecodeTargetLevel>
   </component>
