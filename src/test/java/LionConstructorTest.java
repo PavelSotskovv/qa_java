@@ -1,3 +1,4 @@
+import com.example.Feline;
 import com.example.Lion;
 import com.example.Predator;
 import org.junit.Test;
@@ -14,7 +15,7 @@ public class LionConstructorTest {
     String sex;
     boolean expectedHasMane;
     @Mock
-    Predator predator;
+    Feline feline;
 
     public LionConstructorTest(String sex, boolean expectedHasMane) {
         this.sex = sex;
@@ -30,7 +31,7 @@ public class LionConstructorTest {
     }
     @Test
     public void testHasMane() throws Exception {
-        Lion lion = new Lion(sex, predator);
+        Lion lion = new Lion(sex, feline);
         assertEquals(expectedHasMane, lion.doesHaveMane());
     }
 }
